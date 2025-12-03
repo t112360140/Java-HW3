@@ -12,6 +12,7 @@ class Car extends Vehicle {
     private double gas;
     public Car(int n, double g) { num = n; gas = g; }
     
+    @Override
     public void show() { // 實作抽象方法
         System.out.println("車號是" + num);
         System.out.println("汽油量是" + gas);
@@ -23,6 +24,7 @@ class Plane extends Vehicle {
     private int flight;
     public Plane(int f) { flight = f; }
 
+    @Override
     public void show() { // 實作抽象方法
         System.out.println("飛機的班次是" + flight);
         System.out.println("速度是" + speed);

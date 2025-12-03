@@ -2,8 +2,15 @@ class Car {
     protected int num;
     protected double gas;
     
-    // ... 建構式與 setCar 省略，同上 ...
-    public void setCar(int n, double g) { num = n; gas = g; }
+    public Car() {
+        num = 0;
+        gas = 0.0;
+        System.out.println("生產了車子");
+    }
+    
+    public void setCar(int n, double g) {
+        num = n; gas = g;
+    }
 
     public void show() {
         System.out.println("車號是" + num);
@@ -16,7 +23,7 @@ class RacingCar extends Car {
     
     public void setCourse(int c) { course = c; }
 
-    // 覆寫父類別的 show 方法
+    @Override
     public void show() {
         System.out.println("賽車的車號是" + num);
         System.out.println("汽油量是" + gas);

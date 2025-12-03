@@ -1,4 +1,3 @@
-// 註：此範例講義顯示的是 Object 預設的 equals (比較記憶體位址)
 public class Sample4_8 {
     public static void main(String[] args) {
         Car car1 = new Car();
